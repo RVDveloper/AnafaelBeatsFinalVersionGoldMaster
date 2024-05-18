@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Playlist</title>
+    <link rel="stylesheet" href="../static/CSS/playliststyle.css">
+</head>
+<body>
+    <a href="{{url_for('welcome')}}" style="position: absolute; top: 3%; left: 1.5%;">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <-- Back 
+      </a>
+        
+    
+    <div>
+        
+        <table class="canvas">
+            <tr>
+                <td class="video" rowspan="2">
+                    <iframe id="video-frame" width="400" height="310" src="{{ selected_audio_url }}" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                </td>
+                <td class="name">{{ UserProfile }} Playlist
+                    <p><h5 class="category">Your Favorites</h5><h5 class="range"> {{ playlist_range }}</h5></p>
+                </td>
+            </tr>
+            <tr>
+                <td class="list" valign="middle">
+                    <section class="list">
+                        
+                        {% for item in playlists %}
+                            <p> <a href="#" class="song-link" data-song="{{ item[4] }}" data-src="{{ item[6] }}"><img src="{{ item[3] }}" width="100"> &nbsp {{ item[4] }}</a></p><hr color="grey">
+                            
+                        {% endfor %}
+                    </section>
+                </td>
+            </tr>
+        </table>
+        <a href="#" class="video-title">{{ selected_song_name }}</a>
+        
+    </div>
+    
+
+
+</div>
+    <script>
+        
+        const songLinks = document.querySelectorAll('.song-link');
+        songLinks.forEach(link => {
+            link.addEventListener('click', function(event) {
+                event.preventDefault();
+                const selectedSong = this.getAttribute('data-song');
+                const selectedSrc = this.getAttribute('data-src');
+                fetch('/update_selected_song', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json'
+                    },
+                    body: JSON.stringify({ selected_song: selectedSong, selected_audio_url: selectedSrc })
+                }).then(response => {
+                    if (response.ok) {
+                        return response.json();
+                    }
+                    throw new Error('Network response was not ok.');
+                }).then(data => {
+                    
+                    document.querySelector('.video-title').innerText = data.selected_song;
+                    
+                    document.getElementById('video-frame').src = data.selected_audio_url;
+                }).catch(error => {
+                    console.error('Error:', error);
+                });
+            });
+        });
+    </script>    
+</body>
+</html>

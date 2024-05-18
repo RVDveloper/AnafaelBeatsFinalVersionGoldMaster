@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game - AnafaelBeats</title>
+    <link rel="stylesheet" href="../static/CSS/aboutus.css">
+</head>
+<body>
+    <div>
+        <p>> <span>Name</span>: "<i>{{Name}}</i>"</p>
+        <p>> <span>Last Name</span>: <i>{{Lastname}}</i></p>
+        <p>> <span>AGE</span>: <b>{{Age}}</b></p>
+        <p>> <span>Email</span>: <b>{{Email}}.</b></p>
+        <p>> <span>Gender</span>: <b>{{Gender}}</b></p>
+        <p>> <span>Join Date</span>: <b>{{JoinData}}</b></p>
+        <p>> <span>Username</span>: <b>{{Username}}</b></p>
+        <p>> <span>Do you want to Update your Profile </span>: [<a href="{{url_for('Settings')}}">Update</a>...]</p>
+        <p>> <span>Go back to Dashboard </span>: [<a href="{{url_for('welcome')}}">Dashboard</a>...]</p>
+    </div>
+    
+        
+    <a class="avatar" href="{{url_for('welcome')}}" title="Go to dashboard 👋"><img src="../static/img/logo.jpg"/></a>
+    
+    <script src="../static/JS/aboutus.js"></script>
+</body>
+</html>
