@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../static/CSS/login.css">
+    <title>Lyrics - AnafaelBeats</title>
+    
+</head>
+<body>
+    
+        <section>
+          <div class="swiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="gradient"></div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <div class="logo">
+          <a class="avatar" href="{{url_for('welcome')}}" title="Go to dashboard 👋"><img src="../static/img/logo.jpg"/></a>
+        </div>
+        <section>
+              <div class="container">
+                <div class="background-img">
+                  <div class="login-box">
+                    <h2>Lyrics</h2>
+                    <form method="post" action="{{ url_for('DatosLyrics') }}">
+                      
+                      <div class="user-box">
+                        <input type="text" name="Artist" required="" placeholder="Artist">
+                        <label>Artist</label>
+                      </div>
+                      <div class="user-box">
+                        <input type="text" name="Music" required="" placeholder="Music">
+                        <label>Music</label>
+                      </div>
+                      
+                      
+                      <button  type="submit" style="left: 100px" >
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        Submit
+                      </button>
+                    </form>
+                  </div>
+                </div>
+              </div>
+        </section>
+    
+</body>
+</html>
