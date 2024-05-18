@@ -1,0 +1,208 @@
+body {
+    display: Relative;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    width: 100%;
+    background-image: url(https://github.com/ecemgo/mini-samples-great-tricks/assets/13468728/8727c9b1-be21-4932-a221-4257b59a74dd);
+    background-size: cover;
+    background-repeat: no-repeat;
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    animation: slidein 120s forwards infinite alternate;
+}
+
+
+@keyframes slidein {
+    0%,
+    100% {
+      background-position: 20% 0%;
+      background-size: 3400px;
+    }
+    50% {
+      background-position: 100% 0%;
+      background-size: 2400px;
+    }
+}
+
+.swiper {
+    width: 100%;
+    height: 100%;
+}
+  
+
+
+
+
+div {
+
+    top: 50%;
+    left: 50%;
+    background:linear-gradient(180deg, transparent, #1f0d4d9f);
+    position: absolute;
+    transform: translate(-50%, -50%);
+    width: 90%;
+    height: auto;
+    box-sizing: border-box;
+    box-shadow: 0 0.5px 0 1px rgba(255, 255, 255, 0.23) inset,
+    0 1px 0 0 rgba(255, 255, 255, 0.66) inset, 0 4px 16px rgba(0, 0, 0, 0.12);
+    border-radius: 10px;
+    color:white;
+    font-family: sans-serif;
+    transition: all .5s ease;
+}
+.video {
+width: 100px;
+}
+    .canvas {
+        background: transparent;
+        margin: 0;
+        padding: 0;
+        color:white;
+        transition: all .5s ease; 
+    } 
+    .name {
+        background: transparent;
+        width: 100px;
+        height: 50px;
+        padding: 10px;
+        font-weight: bolder;
+        font-family: sans-serif;
+    }
+    .category {
+        line-height: .01;
+        color: rgba(84, 192, 243, 0.862); 
+        font-weight: bold;
+    }
+    .range {
+       line-height: .01;
+        color: white;
+        font-weight: bold;	
+    }
+    p {
+        display: inline;
+        padding: none;
+    }
+    .list {
+       background-image: linear-gradient(85deg, rgba(91, 55, 235, 0.263), rgba(77, 158, 220, 0.22), rgba(241, 48, 125, 0.221));
+       overflow: auto;
+       margin: 0;
+       padding: 0;
+       width: 100%;
+       height: 210px;
+       align-items: middle;
+    }
+     
+    /* a {
+        color: white;
+        font-family: sans-serif;
+        text-decoration: none;
+    } */
+    img {
+        vertical-align: middle;
+        transition: .5s ease;
+        filter: brightness(80%);
+    }
+    img:hover {
+        width:110px;
+        box-shadow: 0 0 20px black;
+        filter: brightness(120%);
+    }
+    span {
+        background: url(title.ico);
+        width: 100px;
+        height: 100px;
+    }
+
+.video-title {
+display: block;
+padding: 10px;
+}
+.video-title:hover {
+    background-image: linear-gradient(85deg, rgba(91, 55, 235, 0.263), rgba(77, 158, 220, 0.22), rgba(241, 48, 125, 0.221));
+    border-radius: 0px 0px 10px 10px;
+}
+
+
+a {
+    position: relative;
+    display: inline-block;
+    padding: 11px 20px;
+    color: #03e9f4;
+    background-color: #040a22;
+    font-size: 12px;
+    text-decoration: none;
+    text-transform: uppercase;
+    overflow: hidden;
+    transition: .5s;
+    /* top: 40px;
+    left: 10px; */
+    letter-spacing: 4px
+  }
+  a:hover {
+    background: #080808;
+    color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 5px #5b37eb,
+                0 0 25px #5b37eb,
+                0 0 50px #f1307e,
+                0 0 100px #f1307e;
+  }
+  a span {
+    position: absolute;
+    display: block;
+  }
+  a span:nth-child(1) {
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(90deg, transparent, #5b37eb);
+    animation: btn-anim1 1s linear infinite;
+  }
+  a span:nth-child(2) {
+    top: -100%;
+    right: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(180deg, transparent, #5b37eb);
+    animation: btn-anim2 1s linear infinite;
+    animation-delay: .25s
+  }
+  @keyframes btn-anim2 {
+    0% {
+      top: -100%;
+    }
+    50%,100% {
+      top: 100%;
+    }
+  }
+  a span:nth-child(3) {
+    bottom: 0;
+    right: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(270deg, transparent, #f1307e);
+    animation: btn-anim3 1s linear infinite;
+    animation-delay: .5s
+  }
+  
+  @keyframes btn-anim3 {
+    0% {
+      right: -100%;
+    }
+    50%,100% {
+      right: 100%;
+    }
+  }
+  a span:nth-child(4) {
+    bottom: -100%;
+    left: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(360deg, transparent, #f1307e);
+    animation: btn-anim4 1s linear infinite;
+    animation-delay: .75s
+  }
+  
+  
