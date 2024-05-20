@@ -1,8 +1,8 @@
 # Proyecto de Big Data: Aplicación Web de Música AnafaelBeats
 **Developers**: RVDveloper & ANASSELMORABIT 
 
-Profile:https://github.com/ANASSELMORABIT    
-Profile:https://github.com/RVDveloper
+Profile: [ANASSELMORABIT](https://github.com/ANASSELMORABIT)  
+Profile: [RVDveloper](https://github.com/RVDveloper)
 
 ## Descripción General
 
@@ -29,6 +29,7 @@ Este proyecto es una aplicación web de música similar a Spotify, construida ut
 3. **APIs de Terceros**:
     - **API de Música**: Integración con servicios como Spotify API, genius-songs API & youtube-media API para obtener datos sobre canciones, artistas y álbumes.
     - **APIs de Recomendación**: Uso de APIs de recomendación musical para mejorar la precisión de las recomendaciones Genius-songs API.
+    - **Api Busqueda de Lyrics**: Uso de API de Busqueda De Lyrics para el acceso a archivo con datos de millones de Lyrics la API lyrics.ovh.
 
 ## Funcionalidades Principales
 
@@ -47,6 +48,8 @@ Este proyecto es una aplicación web de música similar a Spotify, construida ut
 3. **Reproducción y Creación de PlayLists**: Los usuarios reproducen canciones y crean listas de reproducción basadas en su historial de escucha.
 4. **Recomendaciones**: El sistema proporciona recomendaciones basadas en las tendencias mundiales.
 5. **Gestión de Perfil**: Los usuarios pueden editar su perfil y gestionar sus listas de reproducción.
+6. **Juego Trivia**: Los usuarios pueden participar en juegos de trivia musical.
+7. **Búsqueda de Lyrics**: Los usuarios pueden buscar letras de canciones utilizando la API de lyrics.ovh.
 
 
 
