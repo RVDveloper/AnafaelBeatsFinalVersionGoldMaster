@@ -4,6 +4,9 @@
 Profile: [ANASSELMORABIT](https://github.com/ANASSELMORABIT)  
 Profile: [RVDveloper](https://github.com/RVDveloper)
 
+
+![Anime Logo](https://github.com/RVDveloper/FlaskApiAnimeWeb/blob/main/Preview/SCR-20240324-lzew.png?raw=true)
+
 ## Descripción General
 
 Este proyecto es una aplicación web de música similar a Spotify, construida utilizando Flask, MySQL, JavaScript y APIs. La aplicación permite a los usuarios explorar y reproducir música, crear listas de reproducción y obtener recomendaciones basadas en las Tendencias.
